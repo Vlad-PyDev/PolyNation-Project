@@ -1,0 +1,398 @@
+[
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\layout_item_quiz_option.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\layout\\item_quiz_option.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\drawable_btn_primary_orange.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\drawable\\btn_primary_orange.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\drawable_ic_profile_inactive.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\drawable\\ic_profile_inactive.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\drawable_ic_search.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\drawable\\ic_search.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\drawable_bg_circle_dark.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\drawable\\bg_circle_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\layout_activity_map.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\layout\\activity_map.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\drawable_ic_map_active.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\drawable\\ic_map_active.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\drawable_bg_bottom_sheet.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\drawable\\bg_bottom_sheet.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\drawable_ic_check_circle.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\drawable\\ic_check_circle.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\drawable_ic_close_circle.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\drawable\\ic_close_circle.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\drawable_bg_flag_circle.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\drawable\\bg_flag_circle.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\drawable_ic_eye_off.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\drawable\\ic_eye_off.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\drawable_bg_card_bezwhite_rounded.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\drawable\\bg_card_bezwhite_rounded.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\drawable_bg_icon_circle_green.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\drawable\\bg_icon_circle_green.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\drawable_bg_rank_badge.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\drawable\\bg_rank_badge.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\drawable_bg_card_white_rounded.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\drawable\\bg_card_white_rounded.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\drawable_btn_outline_dark.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\drawable\\btn_outline_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\drawable_ic_eye.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\drawable\\ic_eye.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\drawable_bg_ticket_item.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\drawable\\bg_ticket_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\drawable_ic_error_image.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\drawable\\ic_error_image.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\drawable_ic_pin.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\drawable\\ic_pin.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\drawable_ic_rating_inactive.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\drawable\\ic_rating_inactive.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\drawable_edit_background_light.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\drawable\\edit_background_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\drawable_card_rating_white.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\drawable\\card_rating_white.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\drawable_ic_logo.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\drawable\\ic_logo.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\layout_item_quiz.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\layout\\item_quiz.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\drawable_quiz_option_wrong_bg.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\drawable\\quiz_option_wrong_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\drawable_card_rating_orange.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\drawable\\card_rating_orange.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\drawable_ic_close.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\drawable\\ic_close.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\drawable_bg_dark_rounded.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\drawable\\bg_dark_rounded.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\drawable_bg_question_pill.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\drawable\\bg_question_pill.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\drawable_bg_country_badge.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\drawable\\bg_country_badge.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\layout_dialog_no_internet.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\layout\\dialog_no_internet.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\layout_activity_register.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\layout\\activity_register.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\drawable_btn_outline_orange_dark.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\drawable\\btn_outline_orange_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\drawable_bg_icon_circle_brown.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\drawable\\bg_icon_circle_brown.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\drawable_bg_dot_green.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\drawable\\bg_dot_green.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\drawable_ic_marker_visited.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\drawable\\ic_marker_visited.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\drawable_progress_bar_horizontal.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\drawable\\progress_bar_horizontal.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\drawable_ic_map_inactive.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\drawable\\ic_map_inactive.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\drawable_bg_score_dark.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\drawable\\bg_score_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\drawable_bg_capital_chip.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\drawable\\bg_capital_chip.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\drawable_ic_trophy_active.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\drawable\\ic_trophy_active.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\drawable_bg_tooltip.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\drawable\\bg_tooltip.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\layout_item_flight_ticket.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\layout\\item_flight_ticket.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\drawable_ic_check_outline.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\drawable\\ic_check_outline.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\layout_item_rating.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\layout\\item_rating.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\drawable_bg_section_accent.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\drawable\\bg_section_accent.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\drawable_result_message_bg.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\drawable\\result_message_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\mipmap-mdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\mipmap-mdpi\\ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\layout_activity_quizzes.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\layout\\activity_quizzes.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\drawable_quiz_progress_bar.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\drawable\\quiz_progress_bar.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\drawable_ic_quizzes_active.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\drawable\\ic_quizzes_active.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\drawable_result_message_wrong_bg.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\drawable\\result_message_wrong_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\drawable\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\drawable_ic_quizzes_inactive.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\drawable\\ic_quizzes_inactive.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\drawable_bg_delete_circle.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\drawable\\bg_delete_circle.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\drawable_bg_icon_circle_orange.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\drawable\\bg_icon_circle_orange.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\layout_activity_splash.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\layout\\activity_splash.xml"
+    },
+    {
+        "merged": "com.example.polynation.app-debug-38:/layout_activity_map.xml.flat",
+        "source": "com.example.polynation.app-main-40:/layout/activity_map.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\drawable_ic_profile_active.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\drawable\\ic_profile_active.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\mipmap-xxxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\mipmap-xxxhdpi\\ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\drawable_bg_toast.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\drawable\\bg_toast.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\layout_activity_quiz_question.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\layout\\activity_quiz_question.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\layout_activity_rating.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\layout\\activity_rating.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\drawable_quiz_option_correct_bg.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\drawable\\quiz_option_correct_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\layout_item_visited_country.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\layout\\item_visited_country.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\layout_bottom_navigation.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\layout\\bottom_navigation.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\drawable_ic_navigator_arrow.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\drawable\\ic_navigator_arrow.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\drawable_ic_rating_active.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\drawable\\ic_rating_active.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\drawable_quiz_option_bg.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\drawable\\quiz_option_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\drawable_bg_onboarding_card.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\drawable\\bg_onboarding_card.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\drawable_ic_chevron_right.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\drawable\\ic_chevron_right.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\drawable_bg_avatar_ring.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\drawable\\bg_avatar_ring.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\drawable_bg_quiz_icon.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\drawable\\bg_quiz_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\drawable_ic_custom_marker.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\drawable\\ic_custom_marker.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\mipmap-hdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\mipmap-hdpi\\ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\mipmap-xhdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\mipmap-xhdpi\\ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\layout_activity_profile.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\layout\\activity_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\layout_toast_app.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\layout\\toast_app.xml"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\mipmap-xxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\mipmap-xxhdpi\\ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-debug-38:\\drawable_bg_search_bar.xml.flat",
+        "source": "C:\\Users\\den46\\.gradle\\daemon\\8.13\\com.example.polynation.app-main-40:\\drawable\\bg_search_bar.xml"
+    }
+]
