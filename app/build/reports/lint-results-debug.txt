@@ -1,0 +1,942 @@
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\java\com\example\polynation\Countrynamemapper.java:432: Warning: Implicitly using the default locale is a common source of bugs: Use toUpperCase(Locale) instead. For strings meant to be internal use Locale.ROOT, otherwise Locale.getDefault(). [DefaultLocale]
+        return ISO3_TO_ISO2.get(iso3.toUpperCase());
+                                     ~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\java\com\example\polynation\Countrynamemapper.java:451: Warning: Implicitly using the default locale is a common source of bugs: Use toUpperCase(Locale) instead. For strings meant to be internal use Locale.ROOT, otherwise Locale.getDefault(). [DefaultLocale]
+        String english = new Locale("", iso2.toUpperCase()).getDisplayCountry(Locale.ENGLISH);
+                                             ~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\java\com\example\polynation\FlightTicketsManager.java:146: Warning: Implicitly using the default locale is a common source of bugs: Use toLowerCase(Locale) instead. For strings meant to be internal use Locale.ROOT, otherwise Locale.getDefault(). [DefaultLocale]
+        String key = "dst:" + capitalName.toLowerCase();
+                                          ~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\java\com\example\polynation\MapActivity.java:245: Warning: Implicitly using the default locale is a common source of bugs: Use toLowerCase(Locale) instead. For strings meant to be internal use Locale.ROOT, otherwise Locale.getDefault(). [DefaultLocale]
+        String q = query.toLowerCase().trim();
+                         ~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\java\com\example\polynation\MapActivity.java:251: Warning: Implicitly using the default locale is a common source of bugs: Use toLowerCase(Locale) instead. For strings meant to be internal use Locale.ROOT, otherwise Locale.getDefault(). [DefaultLocale]
+            String name = c.getName() != null ? c.getName().toLowerCase().trim() : "";
+                                                            ~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\java\com\example\polynation\MapActivity.java:252: Warning: Implicitly using the default locale is a common source of bugs: Use toLowerCase(Locale) instead. For strings meant to be internal use Locale.ROOT, otherwise Locale.getDefault(). [DefaultLocale]
+            String capital = c.getCapital() != null ? c.getCapital().toLowerCase().trim() : "";
+                                                                     ~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\java\com\example\polynation\MapActivity.java:253: Warning: Implicitly using the default locale is a common source of bugs: Use toLowerCase(Locale) instead. For strings meant to be internal use Locale.ROOT, otherwise Locale.getDefault(). [DefaultLocale]
+            String engName = c.getEnglishName() != null ? c.getEnglishName().toLowerCase().trim() : "";
+                                                                             ~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\java\com\example\polynation\MapActivity.java:477: Warning: Implicitly using the default locale is a common source of bugs: Use toUpperCase(Locale) instead. For strings meant to be internal use Locale.ROOT, otherwise Locale.getDefault(). [DefaultLocale]
+                                    properties.optString("ISO_A3", ""))).toUpperCase().trim();
+                                                                         ~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\java\com\example\polynation\MapActivity.java:481: Warning: Implicitly using the default locale is a common source of bugs: Use toLowerCase(Locale) instead. For strings meant to be internal use Locale.ROOT, otherwise Locale.getDefault(). [DefaultLocale]
+                                    properties.optString("admin", ""))).toLowerCase().trim();
+                                                                        ~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\java\com\example\polynation\MapActivity.java:589: Warning: Implicitly using the default locale is a common source of bugs: Use toLowerCase(Locale) instead. For strings meant to be internal use Locale.ROOT, otherwise Locale.getDefault(). [DefaultLocale]
+            if (russianName != null) markerByName.put(russianName.toLowerCase().trim(), marker);
+                                                                  ~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\java\com\example\polynation\MapActivity.java:600: Warning: Implicitly using the default locale is a common source of bugs: Use toLowerCase(Locale) instead. For strings meant to be internal use Locale.ROOT, otherwise Locale.getDefault(). [DefaultLocale]
+        return russianName == null ? "" : russianName.toLowerCase().trim();
+                                                      ~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\java\com\example\polynation\MapActivity.java:844: Warning: Implicitly using the default locale is a common source of bugs: Use toUpperCase(Locale) instead. For strings meant to be internal use Locale.ROOT, otherwise Locale.getDefault(). [DefaultLocale]
+            rings = boundaryCache.get(iso3.toUpperCase());
+                                           ~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\java\com\example\polynation\MapActivity.java:849: Warning: Implicitly using the default locale is a common source of bugs: Use toLowerCase(Locale) instead. For strings meant to be internal use Locale.ROOT, otherwise Locale.getDefault(). [DefaultLocale]
+        String searchKey = englishName.toLowerCase().trim();
+                                       ~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\java\com\example\polynation\ProfileActivity.java:134: Warning: Implicitly using the default locale is a common source of bugs: Use toLowerCase(Locale) instead. For strings meant to be internal use Locale.ROOT, otherwise Locale.getDefault(). [DefaultLocale]
+                && body.getMessage().toLowerCase().contains("занят")) {
+                                     ~~~~~~~~~~~
+
+   Explanation for issues of type "DefaultLocale":
+   Calling String#toLowerCase() or #toUpperCase() without specifying an
+   explicit locale is a common source of bugs. The reason for that is that
+   those methods will use the current locale on the user's device, and even
+   though the code appears to work correctly when you are developing the app,
+   it will fail in some locales. For example, in the Turkish locale, the
+   uppercase replacement for i is not I.
+
+   If you want the methods to just perform ASCII replacement, for example to
+   convert an enum name, call String#toUpperCase(Locale.ROOT) instead. If you
+   really want to use the current locale, call
+   String#toUpperCase(Locale.getDefault()) instead.
+
+   https://developer.android.com/reference/java/util/Locale.html#default_locale
+
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_map.xml:388: Warning: Attribute lineHeight is only used in API level 28 and higher (current min is 24) [UnusedAttribute]
+                        android:lineHeight="22sp" />
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_map.xml:430: Warning: Attribute lineHeight is only used in API level 28 and higher (current min is 24) [UnusedAttribute]
+                        android:lineHeight="22sp" />
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_map.xml:472: Warning: Attribute lineHeight is only used in API level 28 and higher (current min is 24) [UnusedAttribute]
+                        android:lineHeight="22sp" />
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_map.xml:514: Warning: Attribute lineHeight is only used in API level 28 and higher (current min is 24) [UnusedAttribute]
+                        android:lineHeight="22sp" />
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_map.xml:556: Warning: Attribute lineHeight is only used in API level 28 and higher (current min is 24) [UnusedAttribute]
+                        android:lineHeight="22sp" />
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_map.xml:598: Warning: Attribute lineHeight is only used in API level 28 and higher (current min is 24) [UnusedAttribute]
+                        android:lineHeight="22sp" />
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_map.xml:658: Warning: Attribute lineHeight is only used in API level 28 and higher (current min is 24) [UnusedAttribute]
+                        android:lineHeight="18sp"
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_map.xml:690: Warning: Attribute lineHeight is only used in API level 28 and higher (current min is 24) [UnusedAttribute]
+                            android:lineHeight="20sp" />
+                            ~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_quiz_question.xml:123: Warning: Attribute lineHeight is only used in API level 28 and higher (current min is 24) [UnusedAttribute]
+                    android:lineHeight="26sp" />
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "UnusedAttribute":
+   This check finds attributes set in XML files that were introduced in a
+   version newer than the oldest version targeted by your application (with
+   the minSdkVersion attribute).
+
+   This is not an error; the application will simply ignore the attribute.
+   However, if the attribute is important to the appearance or functionality
+   of your application, you should consider finding an alternative way to
+   achieve the same result with only available attributes, and then you can
+   optionally create a copy of the layout in a layout-vNN folder which will be
+   used on API NN or higher where you can take advantage of the newer
+   attribute.
+
+   Note: This check does not only apply to attributes. For example, some tags
+   can be unused too, such as the new <tag> element in layouts introduced in
+   API 21.
+
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\java\com\example\polynation\SplashActivity.java:23: Warning: The application should not provide its own launch screen [CustomSplashScreen]
+public class SplashActivity extends AppCompatActivity {
+             ~~~~~~~~~~~~~~
+
+   Explanation for issues of type "CustomSplashScreen":
+   Starting in Android 12 (API 31+), the application's Launch Screen is
+   provided by the system and the application should not create its own,
+   otherwise the user will see two splashscreens. Please check the
+   SplashScreen class to check how the Splash Screen can be controlled and
+   customized.
+
+   https://developer.android.com/guide/topics/ui/splash-screen
+
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\java\com\example\polynation\AppToast.java:36: Warning: Avoid passing null as the view root (needed to resolve layout parameters on the inflated layout's root element) [InflateParams]
+        View view = inflater.inflate(R.layout.toast_app, null);
+                                                         ~~~~
+
+   Explanation for issues of type "InflateParams":
+   When inflating a layout, avoid passing in null as the parent view, since
+   otherwise any layout parameters on the root of the inflated layout will be
+   ignored.
+
+   https://www.bignerdranch.com/blog/understanding-androids-layoutinflater-inflate/
+
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\AndroidManifest.xml:22: Warning: Expecting android:screenOrientation="unspecified" or "fullSensor" for this activity so the user can use the application in any orientation and provide a great experience on Chrome OS devices [LockedOrientationActivity]
+            android:screenOrientation="portrait"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\AndroidManifest.xml:32: Warning: Expecting android:screenOrientation="unspecified" or "fullSensor" for this activity so the user can use the application in any orientation and provide a great experience on Chrome OS devices [LockedOrientationActivity]
+            android:screenOrientation="portrait"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\AndroidManifest.xml:37: Warning: Expecting android:screenOrientation="unspecified" or "fullSensor" for this activity so the user can use the application in any orientation and provide a great experience on Chrome OS devices [LockedOrientationActivity]
+            android:screenOrientation="portrait"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\AndroidManifest.xml:42: Warning: Expecting android:screenOrientation="unspecified" or "fullSensor" for this activity so the user can use the application in any orientation and provide a great experience on Chrome OS devices [LockedOrientationActivity]
+            android:screenOrientation="portrait"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\AndroidManifest.xml:47: Warning: Expecting android:screenOrientation="unspecified" or "fullSensor" for this activity so the user can use the application in any orientation and provide a great experience on Chrome OS devices [LockedOrientationActivity]
+            android:screenOrientation="portrait"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\AndroidManifest.xml:52: Warning: Expecting android:screenOrientation="unspecified" or "fullSensor" for this activity so the user can use the application in any orientation and provide a great experience on Chrome OS devices [LockedOrientationActivity]
+            android:screenOrientation="portrait"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\AndroidManifest.xml:57: Warning: Expecting android:screenOrientation="unspecified" or "fullSensor" for this activity so the user can use the application in any orientation and provide a great experience on Chrome OS devices [LockedOrientationActivity]
+            android:screenOrientation="portrait"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\AndroidManifest.xml:62: Warning: Expecting android:screenOrientation="unspecified" or "fullSensor" for this activity so the user can use the application in any orientation and provide a great experience on Chrome OS devices [LockedOrientationActivity]
+            android:screenOrientation="portrait"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\AndroidManifest.xml:67: Warning: Expecting android:screenOrientation="unspecified" or "fullSensor" for this activity so the user can use the application in any orientation and provide a great experience on Chrome OS devices [LockedOrientationActivity]
+            android:screenOrientation="portrait"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "LockedOrientationActivity":
+   The <activity> element should not be locked to any orientation so that
+   users can take advantage of the multi-window environments and larger
+   screens available on Android. To fix the issue, consider declaring the
+   corresponding activity element with `screenOrientation="unspecified"`or
+   fullSensor attribute.
+
+   https://developer.android.com/topic/arc/window-management
+
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\build.gradle.kts:59: Warning: A newer version of com.squareup.retrofit2:retrofit than 2.9.0 is available: 3.0.0 [NewerVersionAvailable]
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\build.gradle.kts:60: Warning: A newer version of com.squareup.retrofit2:converter-gson than 2.9.0 is available: 3.0.0 [NewerVersionAvailable]
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\build.gradle.kts:64: Warning: A newer version of com.squareup.okhttp3:okhttp than 4.11.0 is available: 5.3.2 [NewerVersionAvailable]
+    implementation("com.squareup.okhttp3:okhttp:4.11.0")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\build.gradle.kts:65: Warning: A newer version of com.github.bumptech.glide:glide than 4.16.0 is available: 5.0.7 [NewerVersionAvailable]
+    implementation("com.github.bumptech.glide:glide:4.16.0")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\build.gradle.kts:66: Warning: A newer version of com.github.bumptech.glide:compiler than 4.16.0 is available: 5.0.7 [NewerVersionAvailable]
+    annotationProcessor("com.github.bumptech.glide:compiler:4.16.0")
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "NewerVersionAvailable":
+   This detector checks with a central repository to see if there are newer
+   versions available for the dependencies used by this project. This is
+   similar to the GradleDependency check, which checks for newer versions
+   available in the Android SDK tools and libraries, but this works with any
+   MavenCentral dependency, and connects to the library every time, which
+   makes it more flexible but also much slower.
+
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\AndroidManifest.xml:22: Warning: Fixed screen orientations will be ignored in most cases, starting from Android 16. Android is moving toward a model where apps are expected to adapt to various orientations, display sizes, and aspect ratios. [DiscouragedApi]
+            android:screenOrientation="portrait"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\AndroidManifest.xml:32: Warning: Fixed screen orientations will be ignored in most cases, starting from Android 16. Android is moving toward a model where apps are expected to adapt to various orientations, display sizes, and aspect ratios. [DiscouragedApi]
+            android:screenOrientation="portrait"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\AndroidManifest.xml:37: Warning: Fixed screen orientations will be ignored in most cases, starting from Android 16. Android is moving toward a model where apps are expected to adapt to various orientations, display sizes, and aspect ratios. [DiscouragedApi]
+            android:screenOrientation="portrait"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\AndroidManifest.xml:42: Warning: Fixed screen orientations will be ignored in most cases, starting from Android 16. Android is moving toward a model where apps are expected to adapt to various orientations, display sizes, and aspect ratios. [DiscouragedApi]
+            android:screenOrientation="portrait"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\AndroidManifest.xml:47: Warning: Fixed screen orientations will be ignored in most cases, starting from Android 16. Android is moving toward a model where apps are expected to adapt to various orientations, display sizes, and aspect ratios. [DiscouragedApi]
+            android:screenOrientation="portrait"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\AndroidManifest.xml:52: Warning: Fixed screen orientations will be ignored in most cases, starting from Android 16. Android is moving toward a model where apps are expected to adapt to various orientations, display sizes, and aspect ratios. [DiscouragedApi]
+            android:screenOrientation="portrait"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\AndroidManifest.xml:57: Warning: Fixed screen orientations will be ignored in most cases, starting from Android 16. Android is moving toward a model where apps are expected to adapt to various orientations, display sizes, and aspect ratios. [DiscouragedApi]
+            android:screenOrientation="portrait"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\AndroidManifest.xml:62: Warning: Fixed screen orientations will be ignored in most cases, starting from Android 16. Android is moving toward a model where apps are expected to adapt to various orientations, display sizes, and aspect ratios. [DiscouragedApi]
+            android:screenOrientation="portrait"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\AndroidManifest.xml:67: Warning: Fixed screen orientations will be ignored in most cases, starting from Android 16. Android is moving toward a model where apps are expected to adapt to various orientations, display sizes, and aspect ratios. [DiscouragedApi]
+            android:screenOrientation="portrait"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "DiscouragedApi":
+   Discouraged APIs are allowed and are not deprecated, but they may be unfit
+   for common use (e.g. due to slow performance or subtle behavior).
+
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\bottom_navigation.xml:2: Warning: Set android:baselineAligned="false" on this element for better performance [DisableBaselineAlignment]
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ ~~~~~~~~~~~~
+
+   Explanation for issues of type "DisableBaselineAlignment":
+   When a LinearLayout is used to distribute the space proportionally between
+   nested layouts, the baseline alignment property should be turned off to
+   make the layout computation faster.
+
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_login.xml:8: Warning: Possible overdraw: Root element paints background #0A1F2D with a theme that also paints a background (inferred theme is @style/Theme.AppCompat.Light.NoActionBar) [Overdraw]
+    android:background="#0A1F2D"
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_main.xml:7: Warning: Possible overdraw: Root element paints background #0A1F2D with a theme that also paints a background (inferred theme is @style/Theme.AppCompat.Light.NoActionBar) [Overdraw]
+    android:background="#0A1F2D">
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_map.xml:7: Warning: Possible overdraw: Root element paints background #0A1F2D with a theme that also paints a background (inferred theme is @style/Theme.AppCompat.Light.NoActionBar) [Overdraw]
+    android:background="#0A1F2D">
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_profile.xml:6: Warning: Possible overdraw: Root element paints background #FEF9E7 with a theme that also paints a background (inferred theme is @style/Theme.AppCompat.Light.NoActionBar) [Overdraw]
+    android:background="#FEF9E7">
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_quiz_question.xml:6: Warning: Possible overdraw: Root element paints background #FEF9E7 with a theme that also paints a background (inferred theme is @style/Theme.AppCompat.Light.NoActionBar) [Overdraw]
+    android:background="#FEF9E7">
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_quizzes.xml:5: Warning: Possible overdraw: Root element paints background #FEF9E7 with a theme that also paints a background (inferred theme is @style/Theme.AppCompat.Light.NoActionBar) [Overdraw]
+    android:background="#FEF9E7">
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_rating.xml:6: Warning: Possible overdraw: Root element paints background #FEF9E7 with a theme that also paints a background (inferred theme is @style/Theme.AppCompat.Light.NoActionBar) [Overdraw]
+    android:background="#FEF9E7">
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_register.xml:8: Warning: Possible overdraw: Root element paints background #0A1F2D with a theme that also paints a background (inferred theme is @style/Theme.AppCompat.Light.NoActionBar) [Overdraw]
+    android:background="#0A1F2D"
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_splash.xml:7: Warning: Possible overdraw: Root element paints background #0A1F2D with a theme that also paints a background (inferred theme is @style/Theme_AppCompat_Light_NoActionBar) [Overdraw]
+    android:background="#0A1F2D"
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\bottom_navigation.xml:7: Warning: Possible overdraw: Root element paints background #0A1F2D with a theme that also paints a background (inferred theme is @style/Theme.AppCompat.Light.NoActionBar) [Overdraw]
+    android:background="#0A1F2D"
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "Overdraw":
+   If you set a background drawable on a root view, then you should use a
+   custom theme where the theme background is null. Otherwise, the theme
+   background will be painted first, only to have your custom background
+   completely cover it; this is called "overdraw".
+
+   NOTE: This detector relies on figuring out which layouts are associated
+   with which activities based on scanning the Java code, and it's currently
+   doing that using an inexact pattern matching algorithm. Therefore, it can
+   incorrectly conclude which activity the layout is associated with and then
+   wrongly complain that a background-theme is hidden.
+
+   If you want your custom background on multiple pages, then you should
+   consider making a custom theme with your custom background and just using
+   that theme instead of a root element background.
+
+   Of course it's possible that your custom drawable is translucent and you
+   want it to be mixed with the background. However, you will get better
+   performance if you pre-mix the background with your drawable and use that
+   resulting image or color as a custom theme background instead.
+
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\xml\backup_rules.xml:8: Warning: The resource R.xml.backup_rules appears to be unused [UnusedResources]
+<full-backup-content>
+^
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\values\colors.xml:3: Warning: The resource R.color.white appears to be unused [UnusedResources]
+    <color name="white">#FFFFFF</color>
+           ~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\values\colors.xml:4: Warning: The resource R.color.black appears to be unused [UnusedResources]
+    <color name="black">#000000</color>
+           ~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\values\colors.xml:5: Warning: The resource R.color.green appears to be unused [UnusedResources]
+    <color name="green">#16A34A</color>
+           ~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\values\colors.xml:6: Warning: The resource R.color.red appears to be unused [UnusedResources]
+    <color name="red">#DC2626</color>
+           ~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\values\colors.xml:7: Warning: The resource R.color.orange appears to be unused [UnusedResources]
+    <color name="orange">#BA5C32</color>
+           ~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\values\colors.xml:8: Warning: The resource R.color.dark_blue appears to be unused [UnusedResources]
+    <color name="dark_blue">#0A1F2D</color>
+           ~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\values\colors.xml:9: Warning: The resource R.color.beige appears to be unused [UnusedResources]
+    <color name="beige">#FEF9E7</color>
+           ~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\xml\data_extraction_rules.xml:6: Warning: The resource R.xml.data_extraction_rules appears to be unused [UnusedResources]
+<data-extraction-rules>
+^
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\drawable\ic_launcher_foreground.xml:1: Warning: The resource R.drawable.ic_launcher_foreground appears to be unused [UnusedResources]
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+^
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\mipmap-hdpi\ic_launcher_round.webp: Warning: The resource R.mipmap.ic_launcher_round appears to be unused [UnusedResources]
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\values\themes.xml:3: Warning: The resource R.style.Base_Theme_PolyNation appears to be unused [UnusedResources]
+    <style name="Base.Theme.PolyNation" parent="Theme.Material3.DayNight.NoActionBar">
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\values\themes.xml:8: Warning: The resource R.style.Theme_PolyNation appears to be unused [UnusedResources]
+    <style name="Theme.PolyNation" parent="Base.Theme.PolyNation" />
+           ~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\values\themes.xml:16: Warning: The resource R.style.ShapeAppearanceOverlay_PolyNation_Photo appears to be unused [UnusedResources]
+    <style name="ShapeAppearanceOverlay.PolyNation.Photo" parent="">
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "UnusedResources":
+   Unused resources make applications larger and slow down builds.
+
+
+   The unused resource check can ignore tests. If you want to include
+   resources that are only referenced from tests, consider packaging them in a
+   test source set instead.
+
+   You can include test sources in the unused resource check by setting the
+   system property lint.unused-resources.include-tests =true, and to exclude
+   them (usually for performance reasons), use
+   lint.unused-resources.exclude-tests =true.
+   ,
+
+   Available options:
+
+   **skip-libraries** (default is true):
+   Whether the unused resource check should skip reporting unused resources in libraries.
+
+   Many libraries will declare resources that are part of the library surface; other modules depending on the library will also reference the resources. To avoid reporting all these resources as unused (in the context of a library), the unused resource check normally skips reporting unused resources in libraries. Instead, run the unused resource check on the consuming app module (along with `checkDependencies=true`).
+
+   However, there are cases where you want to check that all the resources declared in a library are used; in that case, you can disable the skip option.
+
+   To configure this option, use a `lint.xml` file with an <option> like this:
+
+   ```xml
+   <lint>
+       <issue id="UnusedResources">
+           <option name="skip-libraries" value="true" />
+       </issue>
+   </lint>
+   ```
+
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_login.xml:11: Warning: This LinearLayout layout or its LinearLayout parent is unnecessary; transfer the background attribute to the other view [UselessParent]
+    <LinearLayout
+     ~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_main.xml:9: Warning: This LinearLayout layout or its LinearLayout parent is unnecessary; transfer the background attribute to the other view [UselessParent]
+    <LinearLayout
+     ~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_register.xml:11: Warning: This LinearLayout layout or its LinearLayout parent is unnecessary; transfer the background attribute to the other view [UselessParent]
+    <LinearLayout
+     ~~~~~~~~~~~~
+
+   Explanation for issues of type "UselessParent":
+   A layout with children that has no siblings, is not a scrollview or a root
+   layout, and does not have a background, can be removed and have its
+   children moved directly into the parent for a flatter and more efficient
+   layout hierarchy.
+
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\mipmap-anydpi-v26\ic_launcher.xml:2: Warning: The application adaptive icon is missing a monochrome tag [MonochromeLauncherIcon]
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+^
+
+   Explanation for issues of type "MonochromeLauncherIcon":
+   If android:roundIcon and android:icon are both in your manifest, you must
+   either remove the reference to android:roundIcon if it is not needed; or,
+   supply the monochrome icon in the drawable defined by the android:roundIcon
+   and android:icon attribute.
+
+   For example, if android:roundIcon and android:icon are both in the
+   manifest, a launcher might choose to use android:roundIcon over
+   android:icon to display the adaptive app icon. Therefore, your themed
+   application iconwill not show if your monochrome attribute is not also
+   specified in android:roundIcon.
+
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_login.xml:151: Warning: Buttons in button bars should be borderless; use style="?android:attr/buttonBarButtonStyle" (and ?android:attr/buttonBarStyle on the parent) [ButtonStyle]
+                <Button
+                 ~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_login.xml:163: Warning: Buttons in button bars should be borderless; use style="?android:attr/buttonBarButtonStyle" (and ?android:attr/buttonBarStyle on the parent) [ButtonStyle]
+                <Button
+                 ~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_register.xml:177: Warning: Buttons in button bars should be borderless; use style="?android:attr/buttonBarButtonStyle" (and ?android:attr/buttonBarStyle on the parent) [ButtonStyle]
+                <Button
+                 ~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_register.xml:189: Warning: Buttons in button bars should be borderless; use style="?android:attr/buttonBarButtonStyle" (and ?android:attr/buttonBarStyle on the parent) [ButtonStyle]
+                <Button
+                 ~~~~~~
+
+   Explanation for issues of type "ButtonStyle":
+   Button bars typically use a borderless style for the buttons. Set the
+   style="?android:attr/buttonBarButtonStyle" attribute on each of the
+   buttons, and set style="?android:attr/buttonBarStyle" on the parent layout
+
+   https://d.android.com/r/studio-ui/designer/material/dialogs
+
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_login.xml:90: Warning: Missing autofillHints attribute [Autofill]
+                <EditText
+                 ~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_login.xml:120: Warning: Missing autofillHints attribute [Autofill]
+                    <EditText
+                     ~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_map.xml:81: Warning: Missing autofillHints attribute [Autofill]
+            <EditText
+             ~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_profile.xml:333: Warning: Missing autofillHints attribute [Autofill]
+                <EditText
+                 ~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_register.xml:90: Warning: Missing autofillHints attribute [Autofill]
+                <EditText
+                 ~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_register.xml:116: Warning: Missing autofillHints attribute [Autofill]
+                <EditText
+                 ~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_register.xml:146: Warning: Missing autofillHints attribute [Autofill]
+                    <EditText
+                     ~~~~~~~~
+
+   Explanation for issues of type "Autofill":
+   Specify an autofillHints attribute when targeting SDK version 26 or higher
+   or explicitly specify that the view is not important for autofill. Your app
+   can help an autofill service classify the data correctly by providing the
+   meaning of each view that could be autofillable, such as views representing
+   usernames, passwords, credit card fields, email addresses, etc.
+
+   The hints can have any value, but it is recommended to use predefined
+   values like 'username' for a username or 'creditCardNumber' for a credit
+   card number. For a list of all predefined autofill hint constants, see the
+   AUTOFILL_HINT_ constants in the View reference at
+   https://developer.android.com/reference/android/view/View.html.
+
+   You can mark a view unimportant for autofill by specifying an
+   importantForAutofill attribute on that view or a parent view. See
+   https://developer.android.com/reference/android/view/View.html#setImportant
+   ForAutofill(int).
+
+   https://developer.android.com/guide/topics/text/autofill.html
+
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\build.gradle.kts:55: Warning: Use version catalog instead [UseTomlInstead]
+    implementation("org.osmdroid:osmdroid-android:6.1.17")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\build.gradle.kts:56: Warning: Use version catalog instead [UseTomlInstead]
+    implementation("androidx.cardview:cardview:1.0.0")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\build.gradle.kts:59: Warning: Use version catalog instead [UseTomlInstead]
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\build.gradle.kts:60: Warning: Use version catalog instead [UseTomlInstead]
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\build.gradle.kts:63: Warning: Use version catalog instead [UseTomlInstead]
+    implementation("com.squareup.okhttp3:logging-interceptor:4.11.0")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\build.gradle.kts:64: Warning: Use version catalog instead [UseTomlInstead]
+    implementation("com.squareup.okhttp3:okhttp:4.11.0")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\build.gradle.kts:65: Warning: Use version catalog instead [UseTomlInstead]
+    implementation("com.github.bumptech.glide:glide:4.16.0")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\build.gradle.kts:66: Warning: Use version catalog instead [UseTomlInstead]
+    annotationProcessor("com.github.bumptech.glide:compiler:4.16.0")
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "UseTomlInstead":
+   If your project is using a libs.versions.toml file, you should place all
+   Gradle dependencies in the TOML file. This lint check looks for version
+   declarations outside of the TOML file and suggests moving them (and in the
+   IDE, provides a quickfix to performing the operation automatically).
+
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_map.xml:19: Warning: Missing contentDescription attribute on image [ContentDescription]
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_map.xml:32: Warning: Missing contentDescription attribute on image [ContentDescription]
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_map.xml:75: Warning: Missing contentDescription attribute on image [ContentDescription]
+            <ImageView
+             ~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_map.xml:97: Warning: Missing contentDescription attribute on image [ContentDescription]
+            <ImageButton
+             ~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_map.xml:217: Warning: Missing contentDescription attribute on image [ContentDescription]
+            <ImageButton
+             ~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_map.xml:274: Warning: Missing contentDescription attribute on image [ContentDescription]
+                        <ImageView
+                         ~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_map.xml:674: Warning: Missing contentDescription attribute on image [ContentDescription]
+                        <ImageView
+                         ~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_profile.xml:78: Warning: Missing contentDescription attribute on image [ContentDescription]
+                    <ImageView
+                     ~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_profile.xml:166: Warning: Missing contentDescription attribute on image [ContentDescription]
+                        <ImageView
+                         ~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_profile.xml:218: Warning: Missing contentDescription attribute on image [ContentDescription]
+                        <ImageView
+                         ~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_profile.xml:269: Warning: Missing contentDescription attribute on image [ContentDescription]
+                        <ImageView
+                         ~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_quiz_question.xml:63: Warning: Missing contentDescription attribute on image [ContentDescription]
+                    <ImageView
+                     ~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_rating.xml:44: Warning: Missing contentDescription attribute on image [ContentDescription]
+                    <ImageView
+                     ~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\item_quiz_option.xml:35: Warning: Missing contentDescription attribute on image [ContentDescription]
+    <ImageView
+     ~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\item_rating.xml:81: Warning: Missing contentDescription attribute on image [ContentDescription]
+        <ImageView
+         ~~~~~~~~~
+
+   Explanation for issues of type "ContentDescription":
+   Non-textual widgets like ImageViews and ImageButtons should use the
+   contentDescription attribute to specify a textual description of the widget
+   such that screen readers and other accessibility tools can adequately
+   describe the user interface.
+
+   Note that elements in application screens that are purely decorative and do
+   not provide any content or enable a user action should not have
+   accessibility content descriptions. In this case, set their descriptions to
+   @null. If your app's minSdkVersion is 16 or higher, you can instead set
+   these graphical elements' android:importantForAccessibility attributes to
+   no.
+
+   Note that for text fields, you should not set both the hint and the
+   contentDescription attributes since the hint will never be shown. Just set
+   the hint.
+
+   https://developer.android.com/guide/topics/ui/accessibility/apps#special-cases
+
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_login.xml:90: Warning: Missing accessibility label: provide either a view with an android:labelFor that references this view or provide an android:hint [LabelFor]
+                <EditText
+                 ~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_login.xml:120: Warning: Missing accessibility label: provide either a view with an android:labelFor that references this view or provide an android:hint [LabelFor]
+                    <EditText
+                     ~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_register.xml:90: Warning: Missing accessibility label: provide either a view with an android:labelFor that references this view or provide an android:hint [LabelFor]
+                <EditText
+                 ~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_register.xml:116: Warning: Missing accessibility label: provide either a view with an android:labelFor that references this view or provide an android:hint [LabelFor]
+                <EditText
+                 ~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_register.xml:146: Warning: Missing accessibility label: provide either a view with an android:labelFor that references this view or provide an android:hint [LabelFor]
+                    <EditText
+                     ~~~~~~~~
+
+   Explanation for issues of type "LabelFor":
+   Editable text fields should provide an android:hint or, provided your
+   minSdkVersion is at least 17, they may be referenced by a view with a
+   android:labelFor attribute.
+
+   When using android:labelFor, be sure to provide an android:text or an
+   android:contentDescription.
+
+   If your view is labeled but by a label in a different layout which includes
+   this one, just suppress this warning from lint.
+
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\java\com\example\polynation\MapActivity.java:390: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+            tvWelcomeTooltip.setText("Добро пожаловать, " + username + "!\nПриближайте карту для просмотра столиц. Нажмите на маркер для информации");
+                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\java\com\example\polynation\MapActivity.java:1158: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+        tvRoute.setText(flight.origin + " → " + flight.destination);
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\java\com\example\polynation\QuizQuestionActivity.java:114: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+        tvProgress.setText("Вопрос " + (currentQuestionIndex + 1) + " из " + questions.size());
+                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\java\com\example\polynation\QuizQuestionActivity.java:114: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+        tvProgress.setText("Вопрос " + (currentQuestionIndex + 1) + " из " + questions.size());
+                                        ~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\java\com\example\polynation\QuizQuestionActivity.java:200: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+            tvResultMessage.setText("Правильно! +10 очков");
+                                    ~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\java\com\example\polynation\QuizQuestionActivity.java:204: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+            tvResultMessage.setText("Неправильно. Правильный ответ: " + correctAnswerText);
+                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\java\com\example\polynation\QuizzesActivity.java:87: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+            tvQuestionCount.setText(quiz.getQuestionCount() + " вопросов");
+                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\java\com\example\polynation\RatingActivity.java:116: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+            tvUsername.setText(user.getUsername() + " (Вы)");
+                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\java\com\example\polynation\SplashActivity.java:109: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+        if (tvPercent != null) tvPercent.setText(value + "%");
+                                                 ~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\java\com\example\polynation\SplashActivity.java:124: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+            if (tvPercent != null) tvPercent.setText(v + "%");
+                                                     ~~~~~~~
+
+   Explanation for issues of type "SetTextI18n":
+   When calling TextView#setText
+   * Never call Number#toString() to format numbers; it will not handle
+   fraction separators and locale-specific digits properly. Consider using
+   String#format with proper format specifications (%d or %f) instead.
+   * Do not pass a string literal (e.g. "Hello") to display text. Hardcoded
+   text can not be properly translated to other languages. Consider using
+   Android resource strings instead.
+   * Do not build messages by concatenating text chunks. Such messages can not
+   be properly translated.
+
+   https://developer.android.com/guide/topics/resources/localization.html
+
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_login.xml:38: Warning: Hardcoded string "Polynation", should use @string resource [HardcodedText]
+                android:text="Polynation"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_login.xml:48: Warning: Hardcoded string "Исследуйте мир через интерактивную карту", should use @string resource [HardcodedText]
+                android:text="Исследуйте мир через интерактивную карту"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_login.xml:67: Warning: Hardcoded string "Вход", should use @string resource [HardcodedText]
+                android:text="Вход"
+                ~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_login.xml:84: Warning: Hardcoded string "Email", should use @string resource [HardcodedText]
+                    android:text="Email"
+                    ~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_login.xml:110: Warning: Hardcoded string "Пароль", should use @string resource [HardcodedText]
+                    android:text="Пароль"
+                    ~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_login.xml:139: Warning: Hardcoded string "Показать пароль", should use @string resource [HardcodedText]
+                        android:contentDescription="Показать пароль"
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_login.xml:156: Warning: Hardcoded string "Назад", should use @string resource [HardcodedText]
+                    android:text="Назад"
+                    ~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_login.xml:168: Warning: Hardcoded string "Войти", should use @string resource [HardcodedText]
+                    android:text="Войти"
+                    ~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_main.xml:38: Warning: Hardcoded string "Polynation", should use @string resource [HardcodedText]
+                android:text="Polynation"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_main.xml:50: Warning: Hardcoded string "Исследуйте мир через интерактивную карту", should use @string resource [HardcodedText]
+                android:text="Исследуйте мир через интерактивную карту"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_main.xml:69: Warning: Hardcoded string "Войти", should use @string resource [HardcodedText]
+                android:text="Войти"
+                ~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_main.xml:81: Warning: Hardcoded string "Зарегистрироваться", should use @string resource [HardcodedText]
+                android:text="Зарегистрироваться"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_map.xml:53: Warning: Hardcoded string "Показать только мои страны", should use @string resource [HardcodedText]
+            android:contentDescription="Показать только мои страны"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_map.xml:88: Warning: Hardcoded string "Страна или столица", should use @string resource [HardcodedText]
+                android:hint="Страна или столица"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_map.xml:125: Warning: Hardcoded string "Добро пожаловать!", should use @string resource [HardcodedText]
+                android:text="Добро пожаловать!" />
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_map.xml:134: Warning: Hardcoded string "Понятно", should use @string resource [HardcodedText]
+                android:text="Понятно"
+                ~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_map.xml:210: Warning: Hardcoded string "Информация", should use @string resource [HardcodedText]
+                android:text="Информация"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_map.xml:283: Warning: Hardcoded string "Столица", should use @string resource [HardcodedText]
+                            android:text="Столица"
+                            ~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_map.xml:292: Warning: Hardcoded string "…", should use @string resource [HardcodedText]
+                            android:text="…"
+                            ~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_map.xml:303: Warning: Hardcoded string "Отметить, что я здесь был", should use @string resource [HardcodedText]
+                        android:text="Отметить, что я здесь был"
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_map.xml:336: Warning: Hardcoded string "Фотографии", should use @string resource [HardcodedText]
+                            android:text="Фотографии"
+                            ~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_map.xml:375: Warning: Hardcoded string "История", should use @string resource [HardcodedText]
+                            android:text="История"
+                            ~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_map.xml:385: Warning: Hardcoded string "…", should use @string resource [HardcodedText]
+                        android:text="…"
+                        ~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_map.xml:417: Warning: Hardcoded string "Культура", should use @string resource [HardcodedText]
+                            android:text="Культура"
+                            ~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_map.xml:427: Warning: Hardcoded string "…", should use @string resource [HardcodedText]
+                        android:text="…"
+                        ~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_map.xml:459: Warning: Hardcoded string "Традиции", should use @string resource [HardcodedText]
+                            android:text="Традиции"
+                            ~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_map.xml:469: Warning: Hardcoded string "…", should use @string resource [HardcodedText]
+                        android:text="…"
+                        ~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_map.xml:501: Warning: Hardcoded string "Музыка", should use @string resource [HardcodedText]
+                            android:text="Музыка"
+                            ~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_map.xml:511: Warning: Hardcoded string "…", should use @string resource [HardcodedText]
+                        android:text="…"
+                        ~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_map.xml:543: Warning: Hardcoded string "Кино", should use @string resource [HardcodedText]
+                            android:text="Кино"
+                            ~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_map.xml:553: Warning: Hardcoded string "…", should use @string resource [HardcodedText]
+                        android:text="…"
+                        ~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_map.xml:585: Warning: Hardcoded string "Спорт", should use @string resource [HardcodedText]
+                            android:text="Спорт"
+                            ~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_map.xml:595: Warning: Hardcoded string "…", should use @string resource [HardcodedText]
+                        android:text="…"
+                        ~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_map.xml:609: Warning: Hardcoded string "Пройти квиз по стране", should use @string resource [HardcodedText]
+                    android:text="Пройти квиз по стране"
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_map.xml:642: Warning: Hardcoded string "Авиабилеты", should use @string resource [HardcodedText]
+                            android:text="Авиабилеты"
+                            ~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_map.xml:686: Warning: Hardcoded string "Ищем лучшие цены…", should use @string resource [HardcodedText]
+                            android:text="Ищем лучшие цены…"
+                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_profile.xml:38: Warning: Hardcoded string "Профиль", should use @string resource [HardcodedText]
+                    android:text="Профиль"
+                    ~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_profile.xml:51: Warning: Hardcoded string "Редактировать", should use @string resource [HardcodedText]
+                    android:text="Редактировать"
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_profile.xml:90: Warning: Hardcoded string "Загрузка...", should use @string resource [HardcodedText]
+                    android:text="Загрузка..."
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_profile.xml:101: Warning: Hardcoded string "...", should use @string resource [HardcodedText]
+                    android:text="..."
+                    ~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_profile.xml:118: Warning: Hardcoded string "В PolyNation с ", should use @string resource [HardcodedText]
+                        android:text="В PolyNation с "
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_profile.xml:128: Warning: Hardcoded string "...", should use @string resource [HardcodedText]
+                        android:text="..."
+                        ~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_profile.xml:178: Warning: Hardcoded string "0", should use @string resource [HardcodedText]
+                        android:text="0"
+                        ~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_profile.xml:188: Warning: Hardcoded string "очки", should use @string resource [HardcodedText]
+                        android:text="очки"
+                        ~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_profile.xml:230: Warning: Hardcoded string "0", should use @string resource [HardcodedText]
+                        android:text="0"
+                        ~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_profile.xml:240: Warning: Hardcoded string "квизы", should use @string resource [HardcodedText]
+                        android:text="квизы"
+                        ~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_profile.xml:280: Warning: Hardcoded string "0", should use @string resource [HardcodedText]
+                        android:text="0"
+                        ~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_profile.xml:290: Warning: Hardcoded string "страны", should use @string resource [HardcodedText]
+                        android:text="страны"
+                        ~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_profile.xml:326: Warning: Hardcoded string "Имя пользователя", should use @string resource [HardcodedText]
+                        android:text="Имя пользователя"
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_profile.xml:339: Warning: Hardcoded string "Введите новое имя", should use @string resource [HardcodedText]
+                    android:hint="Введите новое имя"
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_profile.xml:350: Warning: Hardcoded string "Сохранить имя", should use @string resource [HardcodedText]
+                    android:text="Сохранить имя"
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_profile.xml:382: Warning: Hardcoded string "Страны, где я был", should use @string resource [HardcodedText]
+                        android:text="Страны, где я был"
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_profile.xml:393: Warning: Hardcoded string "Нажмите «Редактировать», чтобы удалить страну", should use @string resource [HardcodedText]
+                    android:text="Нажмите «Редактировать», чтобы удалить страну"
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_profile.xml:404: Warning: Hardcoded string "Загрузка...", should use @string resource [HardcodedText]
+                    android:text="Загрузка..."
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_profile.xml:423: Warning: Hardcoded string "Выйти", should use @string resource [HardcodedText]
+                android:text="Выйти"
+                ~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_quiz_question.xml:37: Warning: Hardcoded string "Вопрос 1 из 10", should use @string resource [HardcodedText]
+                    android:text="Вопрос 1 из 10"
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_quiz_question.xml:73: Warning: Hardcoded string "0", should use @string resource [HardcodedText]
+                        android:text="0"
+                        ~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_quiz_question.xml:107: Warning: Hardcoded string "ВОПРОС", should use @string resource [HardcodedText]
+                    android:text="ВОПРОС"
+                    ~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_quiz_question.xml:118: Warning: Hardcoded string "...", should use @string resource [HardcodedText]
+                    android:text="..."
+                    ~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_quiz_question.xml:158: Warning: Hardcoded string "Следующий вопрос", should use @string resource [HardcodedText]
+                android:text="Следующий вопрос"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_quiz_question.xml:169: Warning: Hardcoded string "Завершить квиз", should use @string resource [HardcodedText]
+                android:text="Завершить квиз"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_quizzes.xml:24: Warning: Hardcoded string "Квизы", should use @string resource [HardcodedText]
+                android:text="Квизы"
+                ~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_quizzes.xml:34: Warning: Hardcoded string "Проверьте свои знания о странах мира", should use @string resource [HardcodedText]
+                android:text="Проверьте свои знания о странах мира"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_rating.xml:55: Warning: Hardcoded string "Рейтинг игроков", should use @string resource [HardcodedText]
+                    android:text="Рейтинг игроков"
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_rating.xml:65: Warning: Hardcoded string "Топ игроков по набранным очкам", should use @string resource [HardcodedText]
+                android:text="Топ игроков по набранным очкам"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_register.xml:38: Warning: Hardcoded string "Polynation", should use @string resource [HardcodedText]
+                android:text="Polynation"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_register.xml:48: Warning: Hardcoded string "Исследуйте мир через интерактивную карту", should use @string resource [HardcodedText]
+                android:text="Исследуйте мир через интерактивную карту"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_register.xml:67: Warning: Hardcoded string "Регистрация", should use @string resource [HardcodedText]
+                android:text="Регистрация"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_register.xml:84: Warning: Hardcoded string "Имя пользователя", should use @string resource [HardcodedText]
+                    android:text="Имя пользователя"
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_register.xml:110: Warning: Hardcoded string "Email", should use @string resource [HardcodedText]
+                    android:text="Email"
+                    ~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_register.xml:136: Warning: Hardcoded string "Пароль", should use @string resource [HardcodedText]
+                    android:text="Пароль"
+                    ~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_register.xml:165: Warning: Hardcoded string "Показать пароль", should use @string resource [HardcodedText]
+                        android:contentDescription="Показать пароль"
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_register.xml:182: Warning: Hardcoded string "Назад", should use @string resource [HardcodedText]
+                    android:text="Назад"
+                    ~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_register.xml:194: Warning: Hardcoded string "Зарегистрироваться", should use @string resource [HardcodedText]
+                    android:text="Зарегистрироваться"
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_splash.xml:36: Warning: Hardcoded string "PolyNation", should use @string resource [HardcodedText]
+        android:text="PolyNation"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_splash.xml:46: Warning: Hardcoded string "Исследуйте мир через интерактивную карту", should use @string resource [HardcodedText]
+        android:text="Исследуйте мир через интерактивную карту"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_splash.xml:70: Warning: Hardcoded string "Загрузка данных...", should use @string resource [HardcodedText]
+            android:text="Загрузка данных..."
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_splash.xml:82: Warning: Hardcoded string "0%", should use @string resource [HardcodedText]
+            android:text="0%"
+            ~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_splash.xml:105: Warning: Hardcoded string "Повторить", should use @string resource [HardcodedText]
+        android:text="Повторить"
+        ~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\bottom_navigation.xml:33: Warning: Hardcoded string "Карта", should use @string resource [HardcodedText]
+            android:text="Карта"
+            ~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\bottom_navigation.xml:60: Warning: Hardcoded string "Квизы", should use @string resource [HardcodedText]
+            android:text="Квизы"
+            ~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\bottom_navigation.xml:87: Warning: Hardcoded string "Рейтинг", should use @string resource [HardcodedText]
+            android:text="Рейтинг"
+            ~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\bottom_navigation.xml:114: Warning: Hardcoded string "Профиль", should use @string resource [HardcodedText]
+            android:text="Профиль"
+            ~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\dialog_no_internet.xml:24: Warning: Hardcoded string "!", should use @string resource [HardcodedText]
+            android:text="!"
+            ~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\dialog_no_internet.xml:34: Warning: Hardcoded string "Нет подключения к интернету", should use @string resource [HardcodedText]
+        android:text="Нет подключения к интернету"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\dialog_no_internet.xml:45: Warning: Hardcoded string "Приложению нужен интернет, чтобы продолжить работу. Проверьте соединение и попробуйте снова.", should use @string resource [HardcodedText]
+        android:text="Приложению нужен интернет, чтобы продолжить работу. Проверьте соединение и попробуйте снова."
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\dialog_no_internet.xml:57: Warning: Hardcoded string "Повторить", should use @string resource [HardcodedText]
+        android:text="Повторить"
+        ~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\dialog_no_internet.xml:68: Warning: Hardcoded string "Выйти", should use @string resource [HardcodedText]
+        android:text="Выйти"
+        ~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\item_flight_ticket.xml:26: Warning: Hardcoded string "MOW → TYO", should use @string resource [HardcodedText]
+                android:text="MOW → TYO"
+                ~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\item_flight_ticket.xml:36: Warning: Hardcoded string "22 авг · Прямой рейс", should use @string resource [HardcodedText]
+                android:text="22 авг · Прямой рейс"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\item_flight_ticket.xml:45: Warning: Hardcoded string "12 500 ₽", should use @string resource [HardcodedText]
+            android:text="12 500 ₽"
+            ~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\item_flight_ticket.xml:56: Warning: Hardcoded string "Купить билет", should use @string resource [HardcodedText]
+        android:text="Купить билет"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\item_quiz_option.xml:21: Warning: Hardcoded string "А", should use @string resource [HardcodedText]
+        android:text="А"
+        ~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\item_rating.xml:18: Warning: Hardcoded string "1", should use @string resource [HardcodedText]
+        android:text="1"
+        ~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\item_rating.xml:91: Warning: Hardcoded string "0", should use @string resource [HardcodedText]
+            android:text="0"
+            ~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\item_visited_country.xml:33: Warning: Hardcoded string "Удалить", should use @string resource [HardcodedText]
+        android:contentDescription="Удалить"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "HardcodedText":
+   Hardcoding text attributes directly in layout files is bad for several
+   reasons:
+
+   * When creating configuration variations (for example for landscape or
+   portrait) you have to repeat the actual text (and keep it up to date when
+   making changes)
+
+   * The application cannot be translated to other languages by just adding
+   new translations for existing string resources.
+
+   There are quickfixes to automatically extract this hardcoded string into a
+   resource lookup.
+
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_login.xml:128: Warning: When you define paddingEnd you should probably also define paddingStart for right-to-left symmetry [RtlSymmetry]
+                        android:paddingEnd="44dp"
+                        ~~~~~~~~~~~~~~~~~~
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\res\layout\activity_register.xml:154: Warning: When you define paddingEnd you should probably also define paddingStart for right-to-left symmetry [RtlSymmetry]
+                        android:paddingEnd="44dp"
+                        ~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "RtlSymmetry":
+   If you specify padding or margin on the left side of a layout, you should
+   probably also specify padding on the right side (and vice versa) for
+   right-to-left layout symmetry.
+
+D:\Artem\Programming\Project-Samsung\PolyNationClaude\app\src\main\AndroidManifest.xml: Warning: The project references RTL attributes, but does not explicitly enable or disable RTL support with android:supportsRtl in the manifest [RtlEnabled]
+
+   Explanation for issues of type "RtlEnabled":
+   To enable right-to-left support, when running on API 17 and higher, you
+   must set the android:supportsRtl attribute in the manifest <application>
+   element.
+
+   If you have started adding RTL attributes, but have not yet finished the
+   migration, you can set the attribute to false to satisfy this lint check.
+
+0 errors, 225 warnings
