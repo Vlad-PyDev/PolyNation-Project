@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="beige">#FEF9E7</color>
+    <color name="black">#000000</color>
+    <color name="dark_blue">#0A1F2D</color>
+    <color name="green">#16A34A</color>
+    <color name="orange">#BA5C32</color>
+    <color name="red">#DC2626</color>
+    <color name="white">#FFFFFF</color>
+    <string name="app_name">PolyNation</string>
+    <style name="Base.Theme.PolyNation" parent="Theme.Material3.DayNight.NoActionBar">
+
+    </style>
+    <style name="ShapeAppearanceOverlay.PolyNation.Flag" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">12dp</item>
+    </style>
+    <style name="ShapeAppearanceOverlay.PolyNation.Photo" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">18dp</item>
+    </style>
+    <style name="Theme.PolyNation" parent="Base.Theme.PolyNation"/>
+</resources>
