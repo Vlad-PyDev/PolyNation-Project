@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.13.2" type="partial_results">
+    <map id="UnsafeImplicitIntentLaunch">
+            <map id="actionsSent">
+                    <map id="android.intent.action.VIEW (used to start an activity)">
+                        <location id="0"
+                            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/polynation/MapActivity.java"
+                            line="1174"
+                            column="27"
+                            startOffset="50917"
+                            endLine="1174"
+                            endColumn="73"
+                            endOffset="50963"/>
+                    </map>
+                    <map id="android.settings.LOCATION_SOURCE_SETTINGS (used to start an activity)">
+                        <location id="0"
+                            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/polynation/MapActivity.java"
+                            line="1276"
+                            column="39"
+                            startOffset="55116"
+                            endLine="1276"
+                            endColumn="91"
+                            endOffset="55168"/>
+                    </map>
+            </map>
+    </map>
+    <map id="UnsafeIntentLaunch">
+            <map id="unprotected">
+                <entry
+                    name="com.example.polynation.SplashActivity"
+                    boolean="true"/>
+            </map>
+    </map>
+    <map id="UnusedResources">
+        <location id="R.color.beige"
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/colors.xml"
+            line="9"
+            column="12"
+            startOffset="313"
+            endLine="9"
+            endColumn="24"
+            endOffset="325"/>
+        <location id="R.color.black"
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/colors.xml"
+            line="4"
+            column="12"
+            startOffset="105"
+            endLine="4"
+            endColumn="24"
+            endOffset="117"/>
+        <location id="R.color.dark_blue"
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/colors.xml"
+            line="8"
+            column="12"
+            startOffset="268"
+            endLine="8"
+            endColumn="28"
+            endOffset="284"/>
+        <location id="R.color.green"
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/colors.xml"
+            line="5"
+            column="12"
+            startOffset="146"
+            endLine="5"
+            endColumn="24"
+            endOffset="158"/>
+        <location id="R.color.orange"
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/colors.xml"
+            line="7"
+            column="12"
+            startOffset="226"
+            endLine="7"
+            endColumn="25"
+            endOffset="239"/>
+        <location id="R.color.red"
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/colors.xml"
+            line="6"
+            column="12"
+            startOffset="187"
+            endLine="6"
+            endColumn="22"
+            endOffset="197"/>
+        <location id="R.color.white"
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/colors.xml"
+            line="3"
+            column="12"
+            startOffset="64"
+            endLine="3"
+            endColumn="24"
+            endOffset="76"/>
+        <location id="R.drawable.ic_launcher_foreground"
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/drawable/ic_launcher_foreground.xml"
+            line="1"
+            column="1"
+            startOffset="0"
+            endLine="30"
+            endColumn="10"
+            endOffset="1731"/>
+        <location id="R.mipmap.ic_launcher_round"
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/mipmap-hdpi/ic_launcher_round.webp"/>
+        <location id="R.style.Base_Theme_PolyNation"
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/themes.xml"
+            line="3"
+            column="12"
+            startOffset="109"
+            endLine="3"
+            endColumn="40"
+            endOffset="137"/>
+        <location id="R.style.ShapeAppearanceOverlay_PolyNation_Photo"
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/themes.xml"
+            line="16"
+            column="12"
+            startOffset="673"
+            endLine="16"
+            endColumn="58"
+            endOffset="719"/>
+        <location id="R.style.Theme_PolyNation"
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/themes.xml"
+            line="8"
+            column="12"
+            startOffset="339"
+            endLine="8"
+            endColumn="35"
+            endOffset="362"/>
+        <location id="R.xml.backup_rules"
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/xml/backup_rules.xml"
+            line="8"
+            column="1"
+            startOffset="333"
+            endLine="13"
+            endColumn="23"
+            endOffset="490"/>
+        <location id="R.xml.data_extraction_rules"
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/xml/data_extraction_rules.xml"
+            line="6"
+            column="1"
+            startOffset="226"
+            endLine="19"
+            endColumn="25"
+            endOffset="569"/>
+        <entry
+            name="model"
+            string="attr[colorControlNormal(R),selectableItemBackgroundBorderless(R)],color[white(D),black(D),green(D),red(D),orange(D),dark_blue(D),beige(D)],drawable[bg_avatar_ring(U),bg_capital_chip(U),bg_card_bezwhite_rounded(U),bg_card_white_rounded(U),bg_circle_dark(U),bg_country_badge(U),bg_dark_rounded(U),bg_delete_circle(U),bg_dot_green(U),bg_icon_circle_brown(U),bg_icon_circle_green(U),bg_icon_circle_orange(U),bg_question_pill(U),bg_quiz_icon(U),bg_rank_badge(U),bg_score_dark(U),bg_search_bar(U),bg_section_accent(U),bg_ticket_item(U),bg_toast(U),btn_outline_dark(U),btn_outline_orange_dark(U),btn_primary_orange(U),card_rating_orange(U),card_rating_white(U),edit_background_light(U),ic_check_circle(U),ic_chevron_right(U),ic_close(U),ic_close_circle(U),ic_custom_marker(U),ic_error_image(U),ic_eye(U),ic_eye_off(U),ic_launcher_background(U),ic_launcher_foreground(D),ic_launcher_foreground_1(E),ic_logo(U),ic_map_active(U),ic_map_inactive(U),ic_marker_visited(U),ic_navigator_arrow(U),ic_pin(U),ic_profile_active(U),ic_profile_inactive(U),ic_quizzes_active(U),ic_quizzes_inactive(U),ic_rating_active(U),ic_rating_inactive(U),ic_search(U),ic_trophy_active(U),progress_bar_horizontal(U),quiz_option_bg(U),quiz_option_correct_bg(U),quiz_option_wrong_bg(U),quiz_progress_bar(U),result_message_bg(U),result_message_wrong_bg(U)],id[et_email(U),et_password(U),iv_toggle_password(U),btn_back(U),btn_login(U),btn_register(U),mapView(U),bottom_navigation_layout(U),fab_my_location(U),fab_search(U),fab_visited_filter(U),search_bar(U),et_search(U),btn_search_clear(U),tooltip(U),tv_welcome_tooltip(U),btn_close_tooltip(U),country_title_badge(U),tv_country_badge_name(U),tv_country_badge_capital(U),bottom_sheet_info(U),tv_sheet_country_name(U),btn_close_sheet(U),iv_info_flag(U),tv_info_capital(U),btn_toggle_visited(U),gallery_container(U),tv_info_history(U),tv_info_culture(U),tv_info_traditions(U),tv_info_music(U),tv_info_movies(U),tv_info_sports(U),btn_take_quiz(U),tickets_card(U),tv_tickets_subtitle(U),tickets_status_panel(U),iv_tickets_status_icon(U),tv_tickets_status(U),tickets_container(U),btn_edit(U),tv_username(U),tv_email(U),tv_joined_date(U),tv_rating(U),tv_quizzes_solved(U),tv_visited_count(U),card_edit_name(U),et_username(U),btn_save_name(U),tv_visited_hint(U),tv_visited_empty(U),container_visited_list(U),btn_logout(U),tv_progress(U),tv_score(U),progress_quiz(U),card_question(D),tv_question(U),container_options(U),layout_result(U),tv_result_message(U),btn_next(U),btn_finish(U),container_quizzes_list(U),container_rating_list(U),tv_loading_status(U),tv_percent(U),progress_bar(U),btn_retry(U),bottom_navigation(D),nav_map(U),icon_map(U),text_map(U),nav_quizzes(U),icon_quizzes(U),text_quizzes(U),nav_rating(U),icon_rating(U),text_rating(U),nav_profile(U),icon_profile(U),text_profile(U),btn_retry_connection(U),btn_exit_app(U),tv_route(U),tv_meta(U),tv_price(U),btn_buy(U),tv_quiz_title(U),tv_quiz_country(U),tv_question_count(U),tv_option_letter(U),tv_option_text(U),iv_check(U),tv_position(U),tv_country_label(U),btn_delete_country(U),toast_text(U)],layout[activity_login(U),activity_main(U),activity_map(U),bottom_navigation(U),activity_profile(U),activity_quiz_question(U),activity_quizzes(U),activity_rating(U),activity_register(U),activity_splash(U),dialog_no_internet(U),item_flight_ticket(U),item_quiz(U),item_quiz_option(U),item_rating(U),item_visited_country(U),toast_app(U)],mipmap[ic_launcher(U),ic_launcher_foreground(U),ic_launcher_round(D)],string[app_name(U)],style[Theme_AppCompat_Light_NoActionBar(R),ShapeAppearanceOverlay_PolyNation_Flag(U),Base_Theme_PolyNation(D),Theme_Material3_DayNight_NoActionBar(E),Theme_PolyNation(D),ShapeAppearanceOverlay_PolyNation_Photo(D)],xml[backup_rules(D),data_extraction_rules(D)];29^0,2a^0,2c^2d,32^0,3a^0,a6^2e^b^22^1^29^1d^1f,a7^2e^1f^1e,a8^4a^32^4b^3a^4c^23^19^25^a9^e^c^bc^a^33^1f^1a^b,a9^30^37^39^35,aa^4a^1d^f^9^34^c^14^3b^12^36^13^23^1a^22^1f^a9,ab^4a^15^18^3b^40^f^41^1f^a9,ac^4a^a9,ad^4a^14^3b^a9,ae^2e^b^22^1^29^1d^1f,af^d^2e^3c^1f,b0^c^14^1f^1d,b1^1b,b2^c^16^36^15^24,b3^3d^17,b4^21^17^d^35^18^3b,b5^11^10^25,b6^1c,b7^2b^b8,b9^2b^b8,bd^be,bf^bd;;;"/>
+    </map>
+
+</incidents>
