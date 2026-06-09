@@ -8,7 +8,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 import java.util.concurrent.TimeUnit;
 
 public class ApiClient {
-    private static final String BASE_URL = "https://polynation-serv-backend.onrender.com/";
+    private static final String BASE_URL = "https://polynation-back-app.onrender.com/";
 
     private static Retrofit retrofit = null;
     private static ApiService apiService = null;
