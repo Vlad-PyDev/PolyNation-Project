@@ -35,7 +35,7 @@ Android-приложение для интерактивного изучени�
 |---|---|
 | Spring Boot | REST API, контроллеры |
 | Spring Data JPA + Hibernate | ORM, работа с БД |
-| PostgreSQL | Реляционная БД |
+| PostgreSQL | Работа с БД |
 | Spring Security + JWT | Аутентификация, BCrypt-хэширование |
 | Docker + Render | Деплой и хостинг |
 
